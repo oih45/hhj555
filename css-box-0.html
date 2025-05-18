@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-Hant">
 <head>
-<title>CSS BOX Model</title>
+    <meta charset="UTF-8">
+    <title>作業2</title>
+    <style>
+        body {
+            display: flex;
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+        }
+        .left {
+            flex: 1;
+            background-image: url('6b4a650e-7182-41fd-ad8e-ebb7c8e740de.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        ul {
+            font-size: 24px;
+        }
+    </style>
 </head>
-
-<body style="background-color: white;">
-<div style="font-weight: bold;font: size 24px;"></div>
-<div style="color:gray;">
-今天的<span style="color:red">天氣</span>真是不錯
-</div>
-</body>
-
-</html>
-
 <body>
-<img src="flower.jpg"style="border:dotted;">
-<img src="flower.jpg"style="border:dotted;">
-<img src="flower.jpg"style="border-style: solid;border-width:medium">
-<img src="flower.jpg"style="border-style: solid;border-width:thick">
+    <div class="left"></div>
+    <div class="right">
+        <h1>作業2</h1>
+        <ul>
+            <li>利用函式撰寫攝氏溫度轉華氏溫度</li>
+        </ul>
+    </div>
 </body>
-
-
+</html>
